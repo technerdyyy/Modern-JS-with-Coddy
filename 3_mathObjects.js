@@ -1,0 +1,10 @@
+value = Math.PI; // Output: 3.141592653589793
+value = Math.round(2.4); // Output: 2
+value = Math.floor(3.67); // Output: 3
+value = Math.ceil(2.1); // Output: 3
+value = Math.sqrt(64); // Output: 8
+value = Math.abs(-5); // Output: 5
+value = Math.pow(8, 2); // Output: 64
+value = Math.min(5, 2, 1, 4, 6); // Output: 1
+value = Math.max(2, 3, 1, 5, 4); // Output: 5
+value = Math.random() // Output: random decimal number from 0 to 1;
