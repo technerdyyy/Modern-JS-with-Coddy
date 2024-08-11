@@ -36,3 +36,27 @@ console.log(numsAbove3InArr); //output : true
 const numsAbove3InArray = arr.every(num => num > 3);
 console.log(numsAbove3InArray); // output : false
 
+// =============================================================================================================================================================================================
+
+// The filter() method creates a new array filled with elements that pass a test provided by a function. It does not modify the original array. The function we pass in can still have three parameters. If we return true inside of the function that is run on an element, that element gets returned to the new array, and if we return false it gets skipped. We can just return a whole condition instead.
+const newArray = arr.filter(number => number > 3);
+console.log(newArray); // Output: [4, 5]
+
+// =============================================================================================================================================================================================
+
+/*
+The reduce() method executes a reducer function for array element. It returns a single value: the function's accumulated result. The reduce method is a bit different. It has the following parameters:
+
+Function - reducer function to run on every element, which has the following parameters:
+Total (Required) - the total accumulated value so far;
+Element (Required) - the value of the current element;
+Index (Optional) - the index of the current element
+Arr (Optional) - the whole array
+Starting value - the value which is passed to the function as the initial value
+*/
+function reducer(total, currentNumber) {
+    return total += currentNumber;
+}
+
+const Sum = arr.reduce(reducer, 0);
+console.log(Sum); // output : 15
